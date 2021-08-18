@@ -1,0 +1,30 @@
+{
+  "name": "reviewsapi",
+  "version": "1.0.0",
+  "description": "The Atelier ReviewsAPI for Team Venus",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RFE3-Project-Venus/ReviewsAPI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RFE3-Project-Venus/ReviewsAPI/issues"
+  },
+  "homepage": "https://github.com/RFE3-Project-Venus/ReviewsAPI#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "newrelic": "^7.5.1",
+    "nodemon": "^2.0.7",
+    "pg": "^8.6.0",
+    "pg-promise": "^10.10.2",
+    "postgres": "^1.0.2",
+    "sequelize": "^6.6.2"
+  }
+}

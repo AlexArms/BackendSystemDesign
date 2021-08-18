@@ -1,0 +1,23 @@
+config:
+  target: "http://localhost:3333"
+  phases:
+  - duration: 10
+    arrivalRate: 100
+    name: Warm up
+  - duration: 10
+    arrivalRate: 10
+    rampTo: 450
+    name: Ramp up load
+  - duration: 30
+    arrivalRate: 450
+    name: Sustained load
+  payload:
+    path: "./reviewsTestCSV.csv"
+    fields:
+      - "product_id"
+
+scenarios:
+  - name: "get reviews"
+    flow:
+      - get:
+          url: "/reviews?product_id={{ product_id }}"
