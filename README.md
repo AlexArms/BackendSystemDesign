@@ -1,4 +1,3 @@
 # ReviewsAPI
-The Atelier ReviewsAPI for Team Venus
-# SystemDesign
+The Atelier ReviewsAPI and Database
 # SystemDesign
